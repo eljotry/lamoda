@@ -1,0 +1,96 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.header input[type="text"] {
+  border-radius: 4px;
+  border: #ddd 1px solid;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 1200px) {
+  .app {
+    padding: 10px;
+  }
+
+  .header {
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+
+  .header input[type="text"] {
+    font-size: 15px;
+  }
+
+  .resetButton {
+    padding: 8px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .header input[type="text"] {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .resetButton {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .main {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 18px;
+  }
+
+  .header input[type="text"] {
+    font-size: 13px;
+  }
+
+  .resetButton {
+    padding: 6px;
+    font-size: 12px;
+  }
+}
